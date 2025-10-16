@@ -141,7 +141,7 @@ private fun ItemDetailsBody(
             onClick = onSellItem,
             modifier = Modifier.fillMaxWidth(),
             shape = MaterialTheme.shapes.small,
-            enabled = itemDetailsUiState.outOfStock
+            enabled = !itemDetailsUiState.outOfStock
         ) {
             Text(stringResource(R.string.sell))
         }
